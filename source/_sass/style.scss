@@ -21,24 +21,24 @@ body {
     flex: 1;
 
     &.first {
-      background: var(--first-background, red);
-      color: var(--first-color, white);
+      background: var(--first-background);
+      color: var(--first-color);
     }
     &.second {
-      background: var(--second-background, blue);
-      color: var(--second-color, white);
+      background: var(--second-background);
+      color: var(--second-color);
     }
     &.third {
-      background: var(--third-background,yellow);
-      color: var(--third-color,black);
+      background: var(--third-background);
+      color: var(--third-color);
     }
     &.forth {
-      background: var(--forth-background, lightgreen);
-      color: var(--forth-color, black);
+      background: var(--forth-background);
+      color: var(--forth-color);
     }
     &.fifth {
-      background: var(--fifth-background, purple);
-      color: var(--fifth-color, white);
+      background: var(--fifth-background);
+      color: var(--fifth-color);
     }
   }
   footer {

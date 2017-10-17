@@ -17,20 +17,20 @@ body {
     padding-top: 50px;
     flex: 1; }
     .blocks .block.first {
-      background: var(--first-background, red);
-      color: var(--first-color, white); }
+      background: var(--first-background);
+      color: var(--first-color); }
     .blocks .block.second {
-      background: var(--second-background, blue);
-      color: var(--second-color, white); }
+      background: var(--second-background);
+      color: var(--second-color); }
     .blocks .block.third {
-      background: var(--third-background, yellow);
-      color: var(--third-color, black); }
+      background: var(--third-background);
+      color: var(--third-color); }
     .blocks .block.forth {
-      background: var(--forth-background, lightgreen);
-      color: var(--forth-color, black); }
+      background: var(--forth-background);
+      color: var(--forth-color); }
     .blocks .block.fifth {
-      background: var(--fifth-background, purple);
-      color: var(--fifth-color, white); }
+      background: var(--fifth-background);
+      color: var(--fifth-color); }
   .blocks footer {
     padding: 1rem;
     background: rgba(0, 0, 0, 0.4); }
