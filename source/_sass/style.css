@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+html, body {
+  margin: 0;
+  height: 100%; }
+
+body {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif; }
+
+.blocks {
+  text-align: center;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .blocks .block {
+    padding: 1rem;
+    padding-top: 50px;
+    flex: 1; }
+    .blocks .block.first {
+      background: var(--first-background, red);
+      color: var(--first-color, white); }
+    .blocks .block.second {
+      background: var(--second-background, blue);
+      color: var(--second-color, white); }
+    .blocks .block.third {
+      background: var(--third-background, yellow);
+      color: var(--third-color, black); }
+    .blocks .block.forth {
+      background: var(--forth-background, lightgreen);
+      color: var(--forth-color, black); }
+    .blocks .block.fifth {
+      background: var(--fifth-background, purple);
+      color: var(--fifth-color, white); }
+  .blocks footer {
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.4); }
+    .blocks footer nav {
+      margin-bottom: 1rem; }
+
+/*# sourceMappingURL=style.css.map */

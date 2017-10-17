@@ -15,7 +15,7 @@ gulp.task('watchers', ['siteServer'], function() {
 });
 
 gulp.task('HTML', function() {
-    var injectCSSAssetFiles = gulp.src(['build/css/assets/**/*.css']);
+    var injectCSSAssetFiles = gulp.src(['build/css/themes/1.css']);
     var injectCSSGlobalFiles = gulp.src(['build/css/style.css']);
 
     var injectCSSAssetOptions = {
@@ -38,21 +38,21 @@ gulp.task('HTML', function() {
 });
 
 gulp.task('CSS', function() {
-    var injectAppFiles = gulp.src('source/_sass/_include/*.scss', {read: false});
+    // var injectAppFiles = gulp.src('source/_sass/themes/them.scss', {read: false});
+    //
+    // function transformFilepath(filepath) {
+    //     return '@import "' + filepath + '";';
+    // }
+    //
+    // var injectAppOptions = {
+    //     transform: transformFilepath,
+    //     starttag: '// inject:css',
+    //     endtag: '// endinject',
+    //     addRootSlash: false
+    // };
 
-    function transformFilepath(filepath) {
-        return '@import "' + filepath + '";';
-    }
-
-    var injectAppOptions = {
-        transform: transformFilepath,
-        starttag: '// inject:css',
-        endtag: '// endinject',
-        addRootSlash: false
-    };
-
-    return gulp.src('source/_sass/style.scss')
-    .pipe(inject(injectAppFiles, injectAppOptions))
+    return gulp.src('source/_sass/**/*.scss')
+    // .pipe(inject(injectAppFiles, injectAppOptions))
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(sourcemaps.write('sourcemaps'))

@@ -1,0 +1,17 @@
+.blocks .block.first {
+  --first-background: #FF0080;
+  --first-color: w; }
+.blocks .block.second {
+  --second-background: #12EAEA;
+  --second-color: black; }
+.blocks .block.third {
+  --third-background: #D0F500;
+  --third-color: black; }
+.blocks .block.forth {
+  --forth-background: #6D277E;
+  --forth-color: white; }
+.blocks .block.fifth {
+  --fifth-background: #AEF0FF;
+  --fifth-color: black; }
+
+/*# sourceMappingURL=2.css.map */

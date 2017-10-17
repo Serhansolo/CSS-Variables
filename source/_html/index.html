@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Variable</title>
+    <!--inject:css-->
+    <!--endinject-->
+    <!--inject:assetcss-->
+    <!--endinject-->
+</head>
+<body>
+<section class="blocks">
+    <div class="first block">
+        <h1>This is a test page for CSS Variables</h1>
+    </div>
+    <div class="second block">
+        <p>To some, a karma is a joy for absorbing.</p>
+    </div>
+    <div class="third block">
+        <p>Control, heaven and a wonderful state of moonlight.</p>
+    </div>
+    <div class="forth block">
+        <p>Never yearn the saint, for you cannot realize it!</p>
+    </div>
+    <div class="fifth block">
+        <p>The body hurts.</p>
+    </div>
+    <footer>
+        <nav>
+            <a href="#" onclick="changeCSS('css/themes/1.css',1)">Theme 1</a> |
+            <a href="#" onclick="changeCSS('css/themes/2.css',1)">Theme 2</a> |
+            <a href="#" onclick="changeCSS('css/themes/3.css',1)">Theme 2</a>
+        </nav>
+        The CSS Variable test page was inspired by
+        <div><a href="https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/">https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/<</a>.</div>
+    </footer>
+</section>
+
+<script>
+    function changeCSS(cssFile, cssLinkIndex) {
+
+        var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+        var newlink = document.createElement("link");
+        newlink.setAttribute("rel", "stylesheet");
+        newlink.setAttribute("type", "text/css");
+        newlink.setAttribute("href", cssFile);
+
+        document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+    }
+</script>
+</body>
+</html>

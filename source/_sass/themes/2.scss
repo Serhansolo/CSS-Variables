@@ -1,0 +1,24 @@
+.blocks {
+  .block {
+    &.first {
+      --first-background: #FF0080;
+      --first-color: white;
+    }
+    &.second {
+      --second-background: #12EAEA;
+      --second-color: black;
+    }
+    &.third {
+      --third-background: #D0F500;
+      --third-color: black;
+    }
+    &.forth {
+      --forth-background: #6D277E;
+      --forth-color: white;
+    }
+    &.fifth {
+      --fifth-background: #AEF0FF;
+      --fifth-color: black;
+    }
+  }
+}
