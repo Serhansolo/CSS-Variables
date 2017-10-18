@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS Variable</title>
-    <!--inject:css-->
-    <!--endinject-->
     <!--inject:assetcss-->
+    <!--endinject-->
+    <!--inject:css-->
     <!--endinject-->
 </head>
 <body>
 <section class="blocks">
     <div class="first block">
-        <h1>This is a test page for CSS Variables</h1>
+        <h1>This is a test subpage for CSS Variables</h1>
     </div>
     <div class="second block">
         <p>To some, a karma is a joy for absorbing.</p>
@@ -27,19 +27,18 @@
     </div>
     <footer>
         <nav>
-            <a href="#" onclick="changeCSS('css/themes/1.css',1)">Theme 1</a> |
-            <a href="#" onclick="changeCSS('css/themes/2.css',1)">Theme 2</a> |
-            <a href="#" onclick="changeCSS('css/themes/3.css',1)">Theme 2</a>
+            <a href="#" onclick="changeCSS('css/themes/1.css',0)">Theme 1</a> |
+            <a href="#" onclick="changeCSS('css/themes/2.css',0)">Theme 2</a> |
+            <a href="#" onclick="changeCSS('css/themes/3.css',0)">Theme 2</a>
         </nav>
         <nav>
-            <a href="subpage.html">go to subpage.html</a>
+            <a href="index.html">go back to index.html</a>
         </nav>
-
         The CSS Variable test page was inspired by
-        <div><a href="https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/">https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/<</a>.</div>
+        <div><a href="https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/">https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/<</a>.
+        </div>
     </footer>
 </section>
-
 <script>
     function changeCSS(cssFile, cssLinkIndex) {
 
